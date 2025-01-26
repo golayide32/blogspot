@@ -1,0 +1,31 @@
+html{
+font-size: large;
+}
+body{
+    margin:0px;
+    width: 100%;
+
+}
+.main{
+    margin-top: 80px;
+}
+header{
+    height: 80px;
+    border: 0px 0px;
+    background: #009900;
+    margin: 0px;
+    display: block;
+    position: relative;
+    
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+header ul li{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+    text-align: center;
+    margin: auto 0px;
+    padding: 2em;
+}
