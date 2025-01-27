@@ -22,6 +22,18 @@ app.post("/submit",(req,res) => {
     });
     res.render("index.ejs",{data:req.body})
 })
+app.get("/view_post",(req,res) => {
+    let post = "";
+    fs.readFile("blog.txt","utf-8",(err,data) => {
+        if(err) throw err;
+
+        post = data;
+
+        console.log(post);
+    })
+    res.render("blogpost.ejs",{data:post});
+})
 app.listen(port,() => {
+
     console.log(`server is running on port ${port}`);
 })

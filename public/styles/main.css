@@ -1,9 +1,12 @@
+
 html{
 font-size: large;
+font-family: 'Courier New', Courier, monospace;
 }
 body{
     margin:0px;
     width: 100%;
+    background-color: aquamarine;
 
 }
 .main{
@@ -15,12 +18,18 @@ header{
     background: #009900;
     margin: 0px;
     display: block;
-    position: relative;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
     
 }
 header ul{
-    display: flex;
+    display: block;
     list-style: none;
+    width: 100%;
+    padding: 0px;
+    height: 90px;
 }
 header ul li{
     font-family: 'Courier New', Courier, monospace;
@@ -28,4 +37,27 @@ header ul li{
     text-align: center;
     margin: auto 0px;
     padding: 2em;
+
+}
+
+.main{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    top: 90px;
+}
+@media(max-width:200px){
+    .main{
+        width: 200px;
+
+    }
+}
+h1{
+    font-size: 2em;
+}
+p{
+    overflow: hidden;
+    font-weight: bold;
+    text-wrap: no-wrap;
 }
