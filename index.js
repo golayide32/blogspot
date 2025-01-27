@@ -24,14 +24,14 @@ app.post("/submit",(req,res) => {
 })
 app.get("/view_post",(req,res) => {
     let post = "";
-    fs.readFile("blog.txt","utf-8",(err,data) => {
+    post =  fs.readFile("blog.txt","utf-8",(err,data) => {
         if(err) throw err;
 
         post = data;
 
         console.log(post);
     })
-    res.render("blogpost.ejs",{data:post});
+    res.render("blogpost.ejs",{data});
 })
 app.listen(port,() => {
 
