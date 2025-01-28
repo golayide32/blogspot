@@ -4,9 +4,10 @@ font-size: large;
 font-family: 'Courier New', Courier, monospace;
 }
 body{
+    background-image: url("data:image/svg+xml")
     margin:0px;
     width: 100%;
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
 
 }
 .main{
